@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-family: $bold-f;
+    font-size: 20px;
+    line-height: 32px;
+    color: $color-bold;
+    margin-left: 20px;
+  }
+}

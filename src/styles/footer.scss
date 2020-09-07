@@ -1,0 +1,77 @@
+.footer {
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    margin-bottom: 65px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__address {
+    font-style: initial;
+    a {
+      color: $color-bold;
+      transition: color 0.3s linear;
+    }
+  }
+  &__contacts {
+    font-family: $medium-f;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: $color-bold;
+    transition: color 0.3s linear;
+    &:hover {
+      color: $color-purple;
+
+      a {
+        color: $color-purple;
+      }
+    }
+  }
+  &__mail {
+    margin-top: 20px;
+  }
+  &__menu-title {
+    font-family: $bold-f;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-bold;
+    margin-bottom: 30px;
+  }
+  &__item {
+    line-height: 40px;
+  }
+  &__social-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #dedee5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    font-size: 20px;
+    transition: background 0.3s linear;
+    margin-right: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background: $color-purple;
+    }
+  }
+  &__copyright {
+    margin: 118px 0 48px;
+    width: 30%;
+  }
+}
