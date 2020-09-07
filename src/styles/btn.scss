@@ -3,11 +3,13 @@
   font-family: $bold-f;
   display: flex;
   align-items: center;
+  height: 60px;
+
   &__arrow {
     margin-left: 21px;
   }
   &_light {
-    padding: 17px 30px;
+    padding: 0 30px;
     background: $color-white;
     box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
     transition: color 0.3s linear;
@@ -20,7 +22,6 @@
   &_purple {
     font-size: 18px;
     padding: 0 37px;
-    height: 60px;
     background: $color-purple;
     color: $color-white;
     border: 1px solid $color-purple;

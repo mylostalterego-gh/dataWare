@@ -1,0 +1,18 @@
+.propose {
+  margin: 100px 0 150px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    margin-top: 20px;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    .btn_light {
+      margin-left: 30px;
+    }
+  }
+}
