@@ -1,0 +1,21 @@
+.header {
+
+  &__page {
+    padding-top: 50px;
+  }
+
+  &__panel {
+    display: flex;
+  }
+
+  &__nav {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    margin-left: 120px;
+  }
+
+  &__slider {
+    margin-top: 50px;
+  }
+}

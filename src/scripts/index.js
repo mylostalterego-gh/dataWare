@@ -1,7 +1,10 @@
 import '../styles/index.scss';
+import $ from 'jquery';
+import 'slick-carousel/slick/slick';
 
-if (process.env.NODE_ENV === 'development') {
-  require('../index.html');
-}
-
-console.log('webpack starterkit');
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+});

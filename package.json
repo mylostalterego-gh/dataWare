@@ -51,6 +51,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
     "core-js": "^3.6.5",
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
   }
 }

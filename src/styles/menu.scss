@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  align-items: center;
+  font-family: $medium-f;
+  &__item {
+    font-size: 16px;
+    margin-right: 40px;
+    line-height: 26px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      .menu__link {
+        color: $color-bold;
+      }
+    }
+  }
+  &__link {
+    transition: all 0.3s linear;
+  }
+
+  &_active {
+    font-weight: 800;
+    color: $color-bold;
+  }
+}
