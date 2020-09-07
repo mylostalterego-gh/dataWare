@@ -1,0 +1,42 @@
+.feature-block {
+  width: 50%;
+  min-height: 358px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 0 25px;
+
+  &_1 {
+    background: url("../../public/images/features/features-bg-1.svg") center right no-repeat;
+  }
+  &_2 {
+    background: url("../../public/images/features/features-bg-2.svg") center right no-repeat;
+  }
+  &_3 {
+    background: url("../../public/images/features/features-bg-3.svg") center right no-repeat;
+  }
+  &_4 {
+    background: url("../../public/images/features/features-bg-4.svg") top right no-repeat;
+  }
+  &__wrapper {
+    padding-right: 33px;
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    text-align: left;
+    margin-left: 30px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 31px;
+    color: $color-light;
+    font-family: $medium-f;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-bold;
+    margin: 20px 0;
+  }
+}

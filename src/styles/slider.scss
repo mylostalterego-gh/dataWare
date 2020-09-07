@@ -26,11 +26,21 @@
 
   .slick-dots {
     button {
+      margin-right: 3px;
+      width: initial;
+      height: initial;
+      padding: 0;
       &:before {
         opacity: 1;
         font-size: 8px;
         color: rgba(156, 105, 226, 0.2);
       }
+    }
+
+    li {
+      margin: 0 8px;
+      width: initial;
+      height: initial;
     }
   }
   .slick-active {

@@ -1,0 +1,18 @@
+.features {
+  text-align: center;
+
+  &__page {
+    margin: 87px 0 51px;
+  }
+
+  &__description {
+    width: 50%;
+    margin: 26px auto 0;
+  }
+  &__examples {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+  }
+}
