@@ -19,6 +19,10 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
     }),
+    new Webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
   ],
   module: {
     rules: [
@@ -29,7 +33,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.s?css/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },

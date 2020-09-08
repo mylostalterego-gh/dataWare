@@ -1,0 +1,11 @@
+.search {
+  cursor: pointer;
+  @include mobile {
+    margin-right: 25px;
+  }
+  &__img {
+    @include mobile {
+      height: 24px;
+    }
+  }
+}

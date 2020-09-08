@@ -1,12 +1,18 @@
 .link {
   display: flex;
   align-items: center;
-
-  &:hover {
-    .link__text {
-      color: $color-purple;
+  @media (hover: hover) {
+    &:hover {
+      .link__text {
+        color: $color-purple;
+      }
     }
   }
+  //&:hover {
+  //  .link__text {
+  //    color: $color-purple;
+  //  }
+  //}
   &__text {
     font-size: 16px;
     line-height: 26px;

@@ -1,5 +1,10 @@
 .propose {
   margin: 100px 0 150px;
+
+  @include mobile {
+    display: none;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;

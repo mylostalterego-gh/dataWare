@@ -1,34 +1,41 @@
 .form {
   display: flex;
-  justify-content: space-between;
-  margin: 0 -20px;
+  flex-direction: column;
 
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -20px;
+    padding-bottom: 12px;
+  }
   &__block {
     display: flex;
     flex-direction: column;
-    margin-bottom: 44px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    position: relative;
   }
   &__side {
     width: 50%;
     padding: 0 20px;
   }
 
+  &__left {
+    padding-bottom: 18px;
+  }
+
   &__textarea {
-    background-image: repeating-linear-gradient(to bottom,
-            #fff,
-            #fff 49px,
-            rgba(156,105,226,0.2) 50px,
-            rgba(156,105,226,0.2) 52px);
+    color: $color-light;
+    line-height: 86px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    background-image: repeating-linear-gradient(to bottom, #fff, #fff 86px, rgba(156, 105, 226, 0.2) 87px, rgba(156, 105, 226, 0.2) 88px);
+    background-attachment: local;
     resize: none;
     width: 100%;
     height: 100%;
     &::placeholder {
       font-family: $bold-f;
       font-size: 16px;
-      line-height: 26px;
+      line-height: 86px;
       color: $color-bold;
     }
   }
@@ -38,7 +45,8 @@
   }
 
   &__input {
-    padding: 16px 0;
+    padding-bottom: 16px;
+    margin-top: 51px;
     color: $color-light;
     &::placeholder {
       font-family: $bold-f;

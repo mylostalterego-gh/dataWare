@@ -12,24 +12,26 @@
     <div class="modal__content">
       <div class="modal__title">Request Demo</div>
       <form  id="userForm"  role="form" class="form">
-        <div class="form__left form__side">
-          <div class="form__block">
-            <input class="form__input underline_modal" type="text" id="name" name="name" placeholder="Name">
+        <div class="form__wrapper">
+          <div class="form__left form__side">
+            <div class="form__block">
+              <input class="form__input underline_modal" type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="form__block">
+              <input class="form__input underline_modal" type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form__block">
+              <input class="form__input underline_modal" type="url" id="web" name="url" placeholder="Web">
+            </div>
           </div>
-          <div class="form__block">
-            <input class="form__input underline_modal" type="email" id="email" name="email" placeholder="Email">
-          </div>
-          <div class="form__block">
-            <input class="form__input underline_modal" type="url" id="web" name="url" placeholder="Web">
+          <div class="form__right form__side">
+            <div class="form__message">
+              <textarea class="form__textarea" type="text" id="message" placeholder="Message"></textarea>
+            </div>
           </div>
         </div>
-        <div class="form__right form__side">
-          <div class="form__message">
-            <textarea class="form__textarea" type="text" id="message" placeholder="Message"></textarea>
-          </div>
-        </div>
+        <button type="submit" form="userForm" class="btn btn_purple btn_modal">Send</button>
       </form>
-      <button type="submit" form="userForm" class="btn btn_purple btn_modal">Send</button>
     </div>
   </div>
 </div>
@@ -49,6 +51,7 @@
         <div class="search">
           <img src="../public/images/header/search.svg" alt="search" class="search__img">
         </div>
+        <div class="header__burger"><span></span></div>
       </nav>
       <button class="btn btn_light">
         <span class="btn__text">Request Demo</span>

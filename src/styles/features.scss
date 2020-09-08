@@ -3,16 +3,36 @@
 
   &__page {
     margin: 87px 0 51px;
+
+    @include mobile {
+      margin: 87px 0 48px;
+    }
   }
 
   &__description {
-    width: 50%;
-    margin: 26px auto 0;
+    @include desktop {
+      width: 50%;
+      margin: 26px auto 0;
+    }
+
+    @include mobile {
+      text-align: left;
+    }
   }
   &__examples {
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include mobile {
+      margin-top: 100px;
+      justify-content: center;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

@@ -22,6 +22,10 @@ module.exports = merge(common, {
       jQuery: "jquery",
       "window.jQuery": "jquery"
     }),
+    new Webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
   ],
   module: {
     rules: [
@@ -45,7 +49,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.s?css$/i,
-        use: ['style-loader', 'css-loader?sourceMap=true', 'sass-loader']
+        use: ['style-loader','css-loader?sourceMap=true','postcss-loader', 'sass-loader']
       }
     ]
   }

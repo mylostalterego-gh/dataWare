@@ -1,15 +1,29 @@
 .footer {
+  @include mobile {
+    background: rgba(156,105,226, 0.1);
+    padding: 32px 0 24px;
+  }
   &__info {
     display: flex;
     flex-direction: column;
   }
   &__logo {
     margin-bottom: 65px;
+    @include mobile {
+      display: none;
+    }
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
   &__address {
     font-style: initial;
@@ -25,12 +39,20 @@
     letter-spacing: 0.01em;
     color: $color-bold;
     transition: color 0.3s linear;
-    &:hover {
-      color: $color-purple;
 
-      a {
+    @media (hover: hover) {
+      &:hover {
         color: $color-purple;
+        a {
+          color: $color-purple;
+        }
       }
+    }
+  }
+
+  &__menu {
+    @include mobile {
+      display: none;
     }
   }
   &__mail {
@@ -42,6 +64,10 @@
     line-height: 26px;
     color: $color-bold;
     margin-bottom: 30px;
+
+    @include mobile {
+      display: none;
+    }
   }
   &__item {
     line-height: 40px;
@@ -50,6 +76,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      padding-top: 24px;
+    }
   }
   &__social-link {
     width: 50px;
@@ -66,12 +96,19 @@
     &:last-child {
       margin-right: 0;
     }
-    &:hover {
-      background: $color-purple;
+
+    @media (hover: hover) {
+      &:hover {
+        background: $color-purple;
+      }
     }
   }
   &__copyright {
     padding: 118px 0 48px;
     width: 30%;
+
+    @include mobile {
+      display: none;
+    }
   }
 }

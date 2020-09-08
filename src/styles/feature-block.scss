@@ -1,46 +1,83 @@
 .feature-block {
   position: relative;
-  width: 442px;
   height: 358px;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 80px;
 
+  @include mobile {
+    height: 392px;
+    margin-bottom: 0;
+    width: 335px;
+  }
+
   &_1 {
-    background: url("../../public/images/features/features-bg-1.svg") no-repeat;
+    background: url("../../public/images/features/features-bg-1.svg") top right no-repeat;
     .feature-block__img {
       top: 103px;
-      left: -90px;
+      left: 0;
+
+      @include mobile {
+        left: 50%;
+        top: 25px;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    @include mobile {
+      background: url("../../public/images/features/features-bg-5.svg") no-repeat;
     }
   }
   &_2 {
-    background: url("../../public/images/features/features-bg-2.svg") no-repeat;
+    background: url("../../public/images/features/features-bg-2.svg") top right no-repeat;
     .feature-block__img {
       top: 92px;
-      left: -100px;
+      left: 0;
+    }
+    @include mobile {
+      display: none;
     }
   }
   &_3 {
-    background: url("../../public/images/features/features-bg-3.svg") no-repeat;
+    background: url("../../public/images/features/features-bg-3.svg") top right no-repeat;
     .feature-block__img {
-      top: 103px;
-      left: -90px;
+      top: 123px;
+      left: 0;
+    }
+    @include mobile {
+      display: none;
     }
   }
   &_4 {
-    background: url("../../public/images/features/features-bg-4.svg") no-repeat;
+    background: url("../../public/images/features/features-bg-4.svg") top right no-repeat;
     .feature-block__img {
-      top: 103px;
-      left: -90px;
+      top: 70px;
+      left: 0;
+    }
+    @include mobile {
+      display: none;
     }
   }
   &__wrapper {
     display: flex;
     justify-content: flex-end;
+    width: 442px;
+    margin-left: 100px;
+
+    @include mobile {
+      margin-left: 0;
+      width: 100%;
+      padding: 85px 40px 47px;
+    }
   }
 
   &__img {
     position: absolute;
+
+    @include mobile {
+      width: 176px;
+      height: 159px;
+    }
   }
   &__content {
     text-align: left;
@@ -48,6 +85,11 @@
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      flex: 0 0 100%;
+      margin: 0;
+    }
   }
   &__title {
     font-size: 24px;
@@ -60,7 +102,10 @@
     line-height: 26px;
     color: $color-bold;
     align-items: center;
-    margin: 40px 0;
+    margin: 40px 0 10px;
     flex: 1 1 auto;
+    @include mobile {
+      margin: 25px 0;
+    }
   }
 }
