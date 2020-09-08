@@ -1,10 +1,7 @@
 import '../styles/index.scss';
 import $ from 'jquery';
+import 'jquery-validation/dist/jquery.validate';
 import 'slick-carousel/slick/slick';
-
-$('.slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-});
+import './slick';
+import './modal';
+import './validation';

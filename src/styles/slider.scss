@@ -1,10 +1,8 @@
 .slider {
-  border-radius: 50px;
   &__item {
     background: url("../../public/images/header/header-slider.png") no-repeat center center;
     background-size: cover;
     padding: 80px 104px;
-    border-radius: 50px;
   }
   &__content {
     width: 60%;
@@ -50,5 +48,9 @@
         color: $color-purple !important;
       }
     }
+  }
+
+  .slick-list {
+    border-radius: 50px;
   }
 }

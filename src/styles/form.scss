@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -20px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__side {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  &__textarea {
+    background-image: repeating-linear-gradient(to bottom,
+            #fff,
+            #fff 49px,
+            rgba(156,105,226,0.2) 50px,
+            rgba(156,105,226,0.2) 52px);
+    resize: none;
+    width: 100%;
+    height: 100%;
+    &::placeholder {
+      font-family: $bold-f;
+      font-size: 16px;
+      line-height: 26px;
+      color: $color-bold;
+    }
+  }
+
+  &__message {
+    height: 100%;
+  }
+
+  &__input {
+    padding: 16px 0;
+    color: $color-light;
+    &::placeholder {
+      font-family: $bold-f;
+      font-size: 16px;
+      line-height: 26px;
+      color: $color-bold;
+    }
+  }
+}

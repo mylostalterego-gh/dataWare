@@ -30,6 +30,10 @@
       color: $color-purple;
       background: $color-white;
     }
+  }
 
+  &_modal {
+    padding: 0 63px;
+    align-self: flex-end;
   }
 }

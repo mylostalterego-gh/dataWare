@@ -5,6 +5,7 @@
 body {
   background: $color-white;
   font-family: $main-f;
+  position: relative;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -23,4 +24,9 @@ button {
 
 a {
   text-decoration: none;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
 }

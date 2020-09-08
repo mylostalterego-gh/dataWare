@@ -1,0 +1,9 @@
+.underline {
+  &_content {
+    height: 2px;
+    border-bottom: 2px solid rgba(156,105, 226, 0.2);
+  }
+  &_modal {
+    border-bottom: 2px solid rgba(156,105, 226, 0.2);
+  }
+}
